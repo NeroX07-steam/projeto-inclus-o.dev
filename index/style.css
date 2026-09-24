@@ -14,6 +14,7 @@ body {
     color: #f7f3ff;
     line-height: 1.7;
     overflow-x: hidden;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 body::before {
@@ -57,12 +58,14 @@ img {
 a,
 summary,
 audio,
-video {
+video,
+button {
     outline-offset: 5px;
 }
 
 a:focus-visible,
-summary:focus-visible {
+summary:focus-visible,
+button:focus-visible {
     outline: 3px solid #c084fc;
     outline-offset: 6px;
     border-radius: 5px;
@@ -84,10 +87,203 @@ summary:focus-visible {
     top: 20px;
 }
 
+.acessibilidade {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    background: rgba(12, 8, 18, 0.96);
+    border: 1px solid #4b3263;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(15px);
+}
 
-/* ================================
-   HEADER
-================================ */
+.acessibilidade button {
+    min-height: 40px;
+    padding: 8px 13px;
+    border: 1px solid #6d3c91;
+    border-radius: 8px;
+    background: #1b1026;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.acessibilidade button:hover {
+    background: #7e22ce;
+    border-color: #c084fc;
+    transform: translateX(-3px);
+}
+
+.acessibilidade button.ativo {
+    background: #a855f7;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+body.daltonismo .hero h1 strong,
+body.daltonismo .tag,
+body.daltonismo .titulo > span,
+body.daltonismo .mediaTopo span,
+body.daltonismo .texto span,
+body.daltonismo .deficienciaTexto > span {
+    color: #E69F00;
+}
+
+body.daltonismo .botao {
+    background: #0072B2;
+    border-color: #56B4E9;
+}
+
+body.daltonismo .botao:hover {
+    background: #005A8D;
+}
+
+body.daltonismo .menu a::after {
+    background: #E69F00;
+}
+
+body.daltonismo .podcastIcon {
+    background: #0072B2;
+    border-color: #E69F00;
+}
+
+body.daltonismo .deficienciaInfo {
+    border-left-color: #E69F00;
+}
+
+body.daltonismo .logo:hover {
+    color: #E69F00;
+}
+
+body.altoContraste {
+    background: #000000;
+    color: #ffffff;
+}
+
+body.altoContraste::before,
+body.altoContraste::after {
+    display: none;
+}
+
+body.altoContraste .header,
+body.altoContraste .media,
+body.altoContraste .podcast,
+body.altoContraste .deficienciaTexto,
+body.altoContraste .destaque,
+body.altoContraste .footer,
+body.altoContraste .imagem,
+body.altoContraste .deficienciaImagem {
+    background: #000000;
+    border-color: #ffffff;
+}
+
+body.altoContraste p,
+body.altoContraste .heroTexto > p,
+body.altoContraste .titulo p,
+body.altoContraste .texto p,
+body.altoContraste .deficienciaTexto p,
+body.altoContraste .destaque p,
+body.altoContraste .podcast p {
+    color: #ffffff;
+}
+
+body.altoContraste h1,
+body.altoContraste h2,
+body.altoContraste h3,
+body.altoContraste h4,
+body.altoContraste strong,
+body.altoContraste .logo,
+body.altoContraste .menu a {
+    color: #ffffff;
+}
+
+body.altoContraste .tag,
+body.altoContraste .titulo > span,
+body.altoContraste .mediaTopo span,
+body.altoContraste .texto span,
+body.altoContraste .deficienciaTexto > span {
+    color: #ffff00;
+}
+
+body.altoContraste .botao {
+    background: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+}
+
+body.altoContraste .botao:hover {
+    background: #ffff00;
+    color: #000000;
+}
+
+body.altoContraste .acessibilidade {
+    background: #000000;
+    border-color: #ffffff;
+}
+
+body.altoContraste .acessibilidade button {
+    background: #000000;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+body.altoContraste .acessibilidade button:hover,
+body.altoContraste .acessibilidade button.ativo {
+    background: #ffffff;
+    color: #000000;
+}
+
+body.altoContraste .deficienciaInfo {
+    background: #000000;
+    border-left-color: #ffff00;
+}
+
+body.altoContraste details {
+    border-color: #ffffff;
+}
+
+body.altoContraste summary {
+    color: #ffff00;
+}
+
+body.altoContraste .copyright {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+body.textoMaior {
+    font-size: 19px;
+}
+
+body.textoMaior .heroTexto > p,
+body.textoMaior .titulo p,
+body.textoMaior .texto p,
+body.textoMaior .deficienciaTexto p,
+body.textoMaior .destaque p,
+body.textoMaior .transcricao,
+body.textoMaior .podcast p,
+body.textoMaior .footer p {
+    font-size: 21px;
+}
+
+body.textoMaior .menu a {
+    font-size: 18px;
+}
+
+body.textoMaior .tag,
+body.textoMaior .titulo > span,
+body.textoMaior .mediaTopo span {
+    font-size: 16px;
+}
 
 .header {
     position: sticky;
@@ -151,11 +347,6 @@ summary:focus-visible {
 .menu a:hover::after {
     width: 100%;
 }
-
-
-/* ================================
-   HERO
-================================ */
 
 .hero {
     max-width: 1200px;
@@ -238,11 +429,6 @@ summary:focus-visible {
     box-shadow: 0 25px 80px rgba(124, 58, 237, 0.2);
 }
 
-
-/* ================================
-   SEÇÕES
-================================ */
-
 .secao,
 .midias {
     max-width: 1200px;
@@ -267,11 +453,6 @@ summary:focus-visible {
     color: #cfc5db;
     font-size: 18px;
 }
-
-
-/* ================================
-   BLOCOS
-================================ */
 
 .blocos {
     display: flex;
@@ -332,11 +513,6 @@ summary:focus-visible {
     color: #cfc5db;
     font-size: 18px;
 }
-
-
-/* ================================
-   DEFICIÊNCIA INTELECTUAL
-================================ */
 
 .deficiencia {
     max-width: 1200px;
@@ -436,11 +612,6 @@ summary:focus-visible {
     transform: scale(1.05);
 }
 
-
-/* ================================
-   DESTAQUE
-================================ */
-
 .destaque {
     position: relative;
     overflow: hidden;
@@ -503,11 +674,6 @@ summary:focus-visible {
     font-size: 18px;
 }
 
-
-/* ================================
-   MÍDIAS
-================================ */
-
 .midias {
     padding-top: 110px;
 }
@@ -538,11 +704,6 @@ summary:focus-visible {
     font-size: 30px;
 }
 
-
-/* ================================
-   VÍDEO
-================================ */
-
 .video {
     overflow: hidden;
     background: #000000;
@@ -565,11 +726,6 @@ summary:focus-visible {
     outline: 3px solid #c084fc;
     outline-offset: -3px;
 }
-
-
-/* ================================
-   PODCAST
-================================ */
 
 .podcast {
     display: flex;
@@ -611,11 +767,6 @@ summary:focus-visible {
     accent-color: #a855f7;
 }
 
-
-/* ================================
-   TRANSCRIÇÃO
-================================ */
-
 details {
     margin-top: 25px;
     padding-top: 20px;
@@ -645,11 +796,6 @@ summary:hover {
 .transcricao strong {
     color: #ffffff;
 }
-
-
-/* ================================
-   FOOTER
-================================ */
 
 .footer {
     padding: 60px 30px 25px;
@@ -706,11 +852,6 @@ summary:hover {
     border-top: 1px solid #261c30;
 }
 
-
-/* ================================
-   ANIMAÇÕES
-================================ */
-
 @keyframes entrada {
     from {
         opacity: 0;
@@ -746,13 +887,7 @@ summary:hover {
     }
 }
 
-
-/* ================================
-   REDUÇÃO DE MOVIMENTO
-================================ */
-
 @media (prefers-reduced-motion: reduce) {
-
     html {
         scroll-behavior: auto;
     }
@@ -767,12 +902,19 @@ summary:hover {
     }
 }
 
-
-/* ================================
-   TABLET / CELULAR
-================================ */
-
 @media (max-width: 800px) {
+    .acessibilidade {
+        right: 10px;
+        bottom: 10px;
+        max-width: 180px;
+        padding: 8px;
+    }
+
+    .acessibilidade button {
+        min-height: 36px;
+        padding: 7px 9px;
+        font-size: 11px;
+    }
 
     .nav {
         min-height: 75px;
@@ -862,12 +1004,19 @@ summary:hover {
     }
 }
 
-
-/* ================================
-   CELULARES PEQUENOS
-================================ */
-
 @media (max-width: 480px) {
+    .acessibilidade {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        max-width: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .acessibilidade button {
+        width: 100%;
+    }
 
     .logo {
         font-size: 18px;

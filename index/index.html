@@ -1,604 +1,555 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="Tecnologia para todos: inclusão e acessibilidade digital.">
 
     <title>Tecnologia para Todos</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
+    <div class="acessibilidade" aria-label="Ferramentas de acessibilidade">
 
-<a href="#conteudo" class="skip">
-    Pular para o conteúdo principal
-</a>
+        <button type="button" id="daltonismoBtn">
+            🎨 Daltonismo
+        </button>
 
+        <button type="button" id="contrasteBtn">
+            ◐ Alto contraste
+        </button>
 
-<header class="header" id="inicio">
+        <button type="button" id="fonteBtn">
+            A+ Texto maior
+        </button>
 
-    <nav class="nav" aria-label="Menu principal">
+        <button type="button" id="leitorBtn">
+            🔊 Ler página
+        </button>
 
-        <a href="#inicio" class="logo">
-            Tecnologia para Todos
-        </a>
+        <button type="button" id="pararLeitorBtn">
+            ⏹ Parar leitura
+        </button>
 
-        <div class="menu">
+    </div>
 
-            <a href="#sobre">
-                Sobre
+    <a href="#conteudo" class="skip">
+        Pular para o conteúdo principal
+    </a>
+
+    <header class="header" id="inicio">
+
+        <nav class="nav" aria-label="Menu principal">
+
+            <a href="#inicio" class="logo">
+                Tecnologia para Todos
             </a>
 
-            <a href="#conteudo">
-                Conteúdo
-            </a>
-
-            <a href="#midias">
-                Mídias
-            </a>
-
-        </div>
-
-    </nav>
-
-</header>
-
-
-<main id="conteudo">
-
-
-    <section class="hero" id="sobre">
-
-        <div class="heroTexto">
-
-            <span class="tag">
-                INCLUSÃO E ACESSIBILIDADE
-            </span>
-
-            <h1>
-                Tecnologia para <strong>todos</strong>
-            </h1>
-
-            <p>
-                A tecnologia pode transformar vidas quando é criada
-                pensando nas diferentes necessidades das pessoas.
-                A acessibilidade digital ajuda a tornar sites,
-                aplicativos e serviços mais inclusivos.
-            </p>
-
-            <a href="#conteudo" class="botao">
-                Conheça o projeto
-            </a>
-
-        </div>
-
-
-        <div class="heroImagem">
-
-            <img
-                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80"
-                alt="Pessoas diversas trabalhando juntas em um computador">
-
-        </div>
-
-    </section>
-
-
-    <section class="secao">
-
-        <div class="titulo">
-
-            <span>
-                01 — INCLUSÃO
-            </span>
-
-            <h2>
-                Tecnologia que aproxima pessoas
-            </h2>
-
-            <p>
-                A inclusão digital busca diminuir barreiras e permitir
-                que diferentes pessoas tenham acesso às mesmas oportunidades.
-            </p>
-
-        </div>
-
-
-        <div class="blocos">
-
-
-            <article class="bloco">
-
-                <div class="imagem">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80"
-                        alt="Equipe diversa colaborando em uma atividade">
-
-                </div>
-
-
-                <div class="texto">
-
-                    <span>
-                        01
-                    </span>
-
-                    <h3>
-                        Inclusão para todos
-                    </h3>
-
-                    <p>
-                        A inclusão significa criar espaços onde todas
-                        as pessoas possam participar, aprender, trabalhar
-                        e utilizar a tecnologia com autonomia.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <article class="bloco blocoInvertido">
-
-                <div class="imagem">
-
-                    <img
-                        src="./assets/OIP.webp"
-                        alt="Pessoa utilizando computador para acessar informações">
-
-                </div>
-
-
-                <div class="texto">
-
-                    <span>
-                        02
-                    </span>
-
-                    <h3>
-                        Acessibilidade digital
-                    </h3>
-
-                    <p>
-                        Sites e aplicativos acessíveis possuem navegação
-                        clara, textos legíveis, bom contraste e recursos
-                        que facilitam o uso por diferentes pessoas.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <article class="bloco">
-
-                <div class="imagem">
-
-                    <img
-                        src="./assets/baixados (2).webp"
-                        alt="Grupo de pessoas reunidas em um ambiente colaborativo">
-
-                </div>
-
-
-                <div class="texto">
-
-                    <span>
-                        03
-                    </span>
-
-                    <h3>
-                        Respeito às diferenças
-                    </h3>
-
-                    <p>
-                        Desenvolver pensando na diversidade ajuda a
-                        construir experiências digitais mais humanas,
-                        simples e acessíveis para todos.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- DEFICIÊNCIA INTELECTUAL -->
-
-    <section class="deficiencia">
-
-        <div class="deficienciaImagem">
-
-            <img
-                src="assets/pcd.webp"
-                alt="Pessoa com deficiência utilizando tecnologia">
-
-        </div>
-
-
-        <div class="deficienciaTexto">
-
-            <span>
-                04 — ACESSIBILIDADE
-            </span>
-
-            <h2>
-                Deficiência Intelectual
-            </h2>
-
-            <p>
-                A tecnologia também pode ajudar pessoas com deficiência
-                intelectual a aprender, se comunicar e realizar atividades
-                com mais autonomia.
-            </p>
-
-            <p>
-                Interfaces simples, informações organizadas, linguagem clara
-                e recursos visuais podem facilitar a compreensão e tornar
-                experiências digitais mais acessíveis.
-            </p>
-
-
-            <div class="deficienciaInfo">
-
-                <strong>
-                    TECNOLOGIA PARA TODOS
-                </strong>
-
-                <small>
-                    Acessibilidade começa quando pensamos nas diferentes
-                    necessidades das pessoas.
-                </small>
+            <div class="menu">
+
+                <a href="#sobre">
+                    Sobre
+                </a>
+
+                <a href="#conteudo">
+                    Conteúdo
+                </a>
+
+                <a href="#midias">
+                    Mídias
+                </a>
 
             </div>
 
-        </div>
+        </nav>
 
-    </section>
+    </header>
 
+    <main id="conteudo">
 
-    <section class="destaque">
+        <section class="hero" id="sobre">
 
-        <div>
+            <div class="heroTexto">
 
-            <span>
-                02 — TECNOLOGIA
-            </span>
-
-            <h2>
-                Pequenas escolhas podem remover grandes barreiras.
-            </h2>
-
-            <p>
-                Uma interface bem planejada pode fazer a diferença
-                na experiência de quem utiliza uma tecnologia.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <section class="midias" id="midias">
-
-        <div class="titulo">
-
-            <span>
-                03 — MÍDIAS
-            </span>
-
-            <h2>
-                Informação também é inclusão
-            </h2>
-
-            <p>
-                Conheça os conteúdos sobre tecnologia,
-                acessibilidade e inclusão.
-            </p>
-
-        </div>
-
-
-        <!-- VÍDEO -->
-
-        <article class="media">
-
-            <div class="mediaTopo">
-
-                <span>
-                    VÍDEO
+                <span class="tag">
+                    INCLUSÃO E ACESSIBILIDADE
                 </span>
 
-                <h3>
-                    Tecnologia acessível
-                </h3>
+                <h1>
+                    Tecnologia para <strong>todos</strong>
+                </h1>
+
+                <p>
+                    A tecnologia pode transformar vidas quando é criada
+                    pensando nas diferentes necessidades das pessoas.
+                    A acessibilidade digital ajuda a tornar sites,
+                    aplicativos e serviços mais inclusivos.
+                </p>
+
+                <a href="#conteudo" class="botao">
+                    Conheça o projeto
+                </a>
 
             </div>
 
+            <div class="heroImagem">
 
-            <div class="video">
-
-                <video
-                    controls
-                    preload="metadata"
-                    playsinline>
-
-                    <source
-                        src="assets/video.mp4"
-                        type="video/mp4">
-
-                    Seu navegador não suporta a reprodução de vídeo.
-
-                </video>
+                <img
+                    src="./assets/cadeiraxx.webp"
+                    alt="Pessoas diversas trabalhando juntas em um computador">
 
             </div>
 
+        </section>
 
-            <details>
+        <section class="secao">
 
-                <summary>
-                    Ler transcrição completa do vídeo
-                </summary>
-
-
-                <div class="transcricao">
-
-                    <p>
-
-                        <strong>
-                            Narração:
-                        </strong>
-
-                        A acessibilidade digital permite que pessoas
-                        com diferentes necessidades utilizem sites,
-                        aplicativos e serviços digitais.
-
-                    </p>
-
-
-                    <p>
-
-                        <strong>
-                            Narração:
-                        </strong>
-
-                        Recursos como textos alternativos, contraste
-                        adequado, navegação pelo teclado e linguagem
-                        clara ajudam a diminuir barreiras.
-
-                    </p>
-
-
-                    <p>
-
-                        <strong>
-                            Descrição visual:
-                        </strong>
-
-                        Pessoas utilizam diferentes dispositivos para
-                        acessar conteúdos digitais. A navegação apresenta
-                        elementos claros e organizados.
-
-                    </p>
-
-
-                    <p>
-
-                        <strong>
-                            Narração:
-                        </strong>
-
-                        Criar tecnologia para todos significa pensar
-                        na diversidade desde o início do desenvolvimento.
-
-                    </p>
-
-                </div>
-
-            </details>
-
-        </article>
-
-
-        <!-- PODCAST -->
-
-        <article class="media">
-
-            <div class="mediaTopo">
+            <div class="titulo">
 
                 <span>
-                    PODCAST
+                    01 — INCLUSÃO
                 </span>
 
-                <h3>
-                    Conversando sobre inclusão
-                </h3>
+                <h2>
+                    Tecnologia que aproxima pessoas
+                </h2>
+
+                <p>
+                    A inclusão digital busca diminuir barreiras e permitir
+                    que diferentes pessoas tenham acesso às mesmas oportunidades.
+                </p>
 
             </div>
 
+            <div class="blocos">
 
-            <div class="podcast">
+                <article class="bloco">
 
-                <div
-                    class="podcastIcon"
-                    aria-hidden="true">
+                    <div class="imagem">
 
-                    ▶
+                        <img
+                            src="assets/cadeira.webp"
+                            alt="Equipe diversa colaborando em uma atividade">
+
+                    </div>
+
+                    <div class="texto">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Inclusão para todos
+                        </h3>
+
+                        <p>
+                            A inclusão significa criar espaços onde todas
+                            as pessoas possam participar, aprender, trabalhar
+                            e utilizar a tecnologia com autonomia.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="bloco blocoInvertido">
+
+                    <div class="imagem">
+
+                        <img
+                            src="./assets/OIP.webp"
+                            alt="Pessoa utilizando computador para acessar informações">
+
+                    </div>
+
+                    <div class="texto">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h3>
+                            Acessibilidade digital
+                        </h3>
+
+                        <p>
+                            Sites e aplicativos acessíveis possuem navegação
+                            clara, textos legíveis, bom contraste e recursos
+                            que facilitam o uso por diferentes pessoas.
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="bloco">
+
+                    <div class="imagem">
+
+                        <img
+                            src="./assets/baixados (2).webp"
+                            alt="Grupo de pessoas reunidas em um ambiente colaborativo">
+
+                    </div>
+
+                    <div class="texto">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h3>
+                            Respeito às diferenças
+                        </h3>
+
+                        <p>
+                            Desenvolver pensando na diversidade ajuda a
+                            construir experiências digitais mais humanas,
+                            simples e acessíveis para todos.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="deficiencia">
+
+            <div class="deficienciaImagem">
+
+                <img
+                    src="assets/pcd.webp"
+                    alt="Pessoa com deficiência utilizando tecnologia">
+
+            </div>
+
+            <div class="deficienciaTexto">
+
+                <span>
+                    04 — ACESSIBILIDADE
+                </span>
+
+                <h2>
+                    Deficiência Intelectual
+                </h2>
+
+                <p>
+                    A tecnologia também pode ajudar pessoas com deficiência
+                    intelectual a aprender, se comunicar e realizar atividades
+                    com mais autonomia.
+                </p>
+
+                <p>
+                    Interfaces simples, informações organizadas, linguagem clara
+                    e recursos visuais podem facilitar a compreensão e tornar
+                    experiências digitais mais acessíveis.
+                </p>
+
+                <div class="deficienciaInfo">
+
+                    <strong>
+                        TECNOLOGIA PARA TODOS
+                    </strong>
+
+                    <small>
+                        Acessibilidade começa quando pensamos nas diferentes
+                        necessidades das pessoas.
+                    </small>
 
                 </div>
 
+            </div>
 
-                <div>
+        </section>
 
-                    <h4>
-                        Inclusão e tecnologia
-                    </h4>
+        <section class="destaque">
 
-                    <p>
-                        Podcast sobre acessibilidade digital
-                    </p>
+            <div>
 
+                <span>
+                    02 — TECNOLOGIA
+                </span>
 
-                    <audio
+                <h2>
+                    Pequenas escolhas podem remover grandes barreiras.
+                </h2>
+
+                <p>
+                    Uma interface bem planejada pode fazer a diferença
+                    na experiência de quem utiliza uma tecnologia.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="midias" id="midias">
+
+            <div class="titulo">
+
+                <span>
+                    03 — MÍDIAS
+                </span>
+
+                <h2>
+                    Informação também é inclusão
+                </h2>
+
+                <p>
+                    Conheça os conteúdos sobre tecnologia,
+                    acessibilidade e inclusão.
+                </p>
+
+            </div>
+
+            <article class="media">
+
+                <div class="mediaTopo">
+
+                    <span>
+                        VÍDEO
+                    </span>
+
+                    <h3>
+                        Tecnologia acessível
+                    </h3>
+
+                </div>
+
+                <div class="video">
+
+                    <video
                         controls
-                        preload="metadata">
+                        preload="metadata"
+                        playsinline>
 
                         <source
-                            src="assets/aura.mp3"
-                            type="audio/mpeg">
+                            src="assets/video.mp4"
+                            type="video/mp4">
 
-                        Seu navegador não suporta áudio.
+                        Seu navegador não suporta a reprodução de vídeo.
 
-                    </audio>
+                    </video>
 
                 </div>
+
+                <details>
+
+                    <summary>
+                        Ler transcrição completa do vídeo
+                    </summary>
+
+                    <div class="transcricao">
+
+                        <p>
+                            <strong>
+                                Narração:
+                            </strong>
+
+                            A acessibilidade digital permite que pessoas
+                            com diferentes necessidades utilizem sites,
+                            aplicativos e serviços digitais.
+                        </p>
+
+                        <p>
+                            <strong>
+                                Narração:
+                            </strong>
+
+                            Recursos como textos alternativos, contraste
+                            adequado, navegação pelo teclado e linguagem
+                            clara ajudam a diminuir barreiras.
+                        </p>
+
+                        <p>
+                            <strong>
+                                Descrição visual:
+                            </strong>
+
+                            Pessoas utilizam diferentes dispositivos para
+                            acessar conteúdos digitais. A navegação apresenta
+                            elementos claros e organizados.
+                        </p>
+
+                        <p>
+                            <strong>
+                                Narração:
+                            </strong>
+
+                            Criar tecnologia para todos significa pensar
+                            na diversidade desde o início do desenvolvimento.
+                        </p>
+
+                    </div>
+
+                </details>
+
+            </article>
+
+            <article class="media">
+
+                <div class="mediaTopo">
+
+                    <span>
+                        PODCAST
+                    </span>
+
+                    <h3>
+                        Conversando sobre inclusão
+                    </h3>
+
+                </div>
+
+                <div class="podcast">
+
+                    <div
+                        class="podcastIcon"
+                        aria-hidden="true">
+
+                        ▶
+
+                    </div>
+
+                    <div>
+
+                        <h4>
+                            Inclusão e tecnologia
+                        </h4>
+
+                        <p>
+                            Podcast sobre acessibilidade digital
+                        </p>
+
+                        <audio
+                            controls
+                            preload="metadata">
+
+                            <source
+                                src="assets/aura.mp3"
+                                type="audio/mpeg">
+
+                            Seu navegador não suporta áudio.
+
+                        </audio>
+
+                    </div>
+
+                </div>
+
+                <details>
+
+                    <summary>
+                        Ler transcrição completa do podcast
+                    </summary>
+
+                    <div class="transcricao">
+
+                        <p>
+                            <strong>
+                                Apresentador:
+                            </strong>
+
+                            Hoje vamos conversar sobre como a tecnologia
+                            pode ajudar a construir uma sociedade mais inclusiva.
+                        </p>
+
+                        <p>
+                            <strong>
+                                Convidado:
+                            </strong>
+
+                            A acessibilidade digital é importante porque
+                            permite que mais pessoas tenham acesso à informação
+                            e aos serviços disponíveis na internet.
+                        </p>
+
+                        <p>
+                            <strong>
+                                Apresentador:
+                            </strong>
+
+                            E pequenas mudanças no desenvolvimento de um site
+                            podem fazer diferença?
+                        </p>
+
+                        <p>
+                            <strong>
+                                Convidado:
+                            </strong>
+
+                            Sim. Uma estrutura organizada, textos claros,
+                            contraste adequado e alternativas para conteúdos
+                            visuais são exemplos de recursos que podem reduzir
+                            barreiras.
+                        </p>
+
+                        <p>
+                            <strong>
+                                Apresentador:
+                            </strong>
+
+                            Por isso, pensar em acessibilidade desde o começo
+                            é uma forma de criar tecnologia para mais pessoas.
+                        </p>
+
+                    </div>
+
+                </details>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footerConteudo">
+
+            <div>
+
+                <h2>
+                    Tecnologia para Todos
+                </h2>
+
+                <p>
+                    Inclusão, acessibilidade e tecnologia para uma sociedade
+                    com mais oportunidades.
+                </p>
 
             </div>
 
+            <div class="footerInfo">
 
-            <details>
+                <p>
+                    Desenvolvido por
+                </p>
 
-                <summary>
-                    Ler transcrição completa do podcast
-                </summary>
+                <strong>
+                    Lucas Henrique e Luis Eduardo
+                </strong>
 
+                <span>
+                    SENAI São José
+                </span>
 
-                <div class="transcricao">
-
-                    <p>
-
-                        <strong>
-                            Apresentador:
-                        </strong>
-
-                        Hoje vamos conversar sobre como a tecnologia
-                        pode ajudar a construir uma sociedade mais inclusiva.
-
-                    </p>
-
-
-                    <p>
-
-                        <strong>
-                            Convidado:
-                        </strong>
-
-                        A acessibilidade digital é importante porque
-                        permite que mais pessoas tenham acesso à informação
-                        e aos serviços disponíveis na internet.
-
-                    </p>
-
-
-                    <p>
-
-                        <strong>
-                            Apresentador:
-                        </strong>
-
-                        E pequenas mudanças no desenvolvimento de um site
-                        podem fazer diferença?
-
-                    </p>
-
-
-                    <p>
-
-                        <strong>
-                            Convidado:
-                        </strong>
-
-                        Sim. Uma estrutura organizada, textos claros,
-                        contraste adequado e alternativas para conteúdos
-                        visuais são exemplos de recursos que podem reduzir
-                        barreiras.
-
-                    </p>
-
-
-                    <p>
-
-                        <strong>
-                            Apresentador:
-                        </strong>
-
-                        Por isso, pensar em acessibilidade desde o começo
-                        é uma forma de criar tecnologia para mais pessoas.
-
-                    </p>
-
-                </div>
-
-            </details>
-
-        </article>
-
-
-    </section>
-
-
-</main>
-
-
-<footer class="footer">
-
-    <div class="footerConteudo">
-
-        <div>
-
-            <h2>
-                Tecnologia para Todos
-            </h2>
-
-            <p>
-                Inclusão, acessibilidade e tecnologia para uma sociedade
-                com mais oportunidades.
-            </p>
+            </div>
 
         </div>
 
-
-        <div class="footerInfo">
-
-            <p>
-                Desenvolvido por
-            </p>
-
-            <strong>
-                Lucas Henrique e Luis Eduardo
-            </strong>
-
-            <span>
-                SENAI São José
-            </span>
-
+        <div class="copyright">
+            © 2026 Tecnologia para Todos
         </div>
 
-    </div>
+    </footer>
 
-
-    <div class="copyright">
-
-        © 2026 Tecnologia para Todos
-
-    </div>
-
-</footer>
-
+    <script src="script.js"></script>
 
 </body>
 
